@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway&display=swap');
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    color:white; 
+}
+h1, h2, h3, #footer {
+    color:white; 
+    text-align:center;
+    margin-top:0;
+    font-family: 'Raleway', sans-serif;
+}
+/*header footer*/
+.content-flexbox {
+    display:flex;
+    flex-flow: row wrap;
+}
+#header, #footer {
+    background:url("image/milky-way.jpg");
+}
+#logo{
+    flex: 2 0 0;
+    text-align: center;
+}
+#main-navigation {
+	list-style:none;
+	padding:0;
+	margin-top: 1em;
+    flex: 1 0 0;
+}
+#main-navigation ul, #footer ul {
+  margin:0;
+  padding:1em 0;
+}
+#main-navigation li, #footer-nav li {
+	display: inline-block;
+	vertical-align:top;
+	list-style-type:none;
+	margin-right:20px;
+}
+a:link,
+a:visited {
+  color:white;
+  text-decoration:none;
+}
+a:hover,
+a:active {
+  color:darkgrey;
+}
+.hidden {
+	position:absolute;
+	left:-100000px;
+	width:1px;
+	height:1px;
+}
+/*logo*/
+
+
+#planets-information {
+    flex: 1 0 0;
+    display:none;
+    background: url("image/milky-way-crop.jpg");
+}
+#universe {
+    height:1300px;
+    flex:3 0 0;
+    background: url("image/milky-way.jpg");
+}
+#sun {
+    border-radius:50%;
+    width:100px;
+    height:100px;
+    background:#E36700;
+}
+.planet {
+    border-radius:50%;
+    transform: translateY(-50px);
+}
+/*Planet size and color*/
+#mercury {
+    background-color:#68696d;
+    width:30px;
+    height:30px;
+}
+/*#comet {
+    width:100px;
+    height:3px;
+    background-color:white;
+}*/
+#venus {
+    background-color:#a57c1b;
+    transform: translateX(-90px) translateY(-90px);
+    width:30px;
+    height:30px;
+}
+#earth {
+    background-color:blue;
+    transform: translateX(-130px) translateY(-130px);
+    width:50px;
+    height:50px;
+}
+#mars {
+    background-color:#c1440e;
+    transform: translateX(-150px) translateY(-150px);
+    width:40px;
+    height:40px;
+}
+#jupiter {
+    background-color:#c99039;
+    transform: translateX(-220px) translateY(-220px);
+    width:60px;
+    height:60px;
+}
+#saturn {
+    background-color:darkkhaki;
+    transform: translateX(-260px) translateY(-260px);
+    width:60px;
+    height:60px;
+}
+#uranus {
+    background-color:skyblue;
+    transform: translateX(-320px) translateY(-320px);
+    width:70px;
+    height:70px;
+}
+#neptune {
+    background-color:royalblue;
+    transform: translateX(-350px) translateY(-350px);
+    width:70px;
+    height:70px;
+}
+#pluto {
+    background-color:#fff1d5;
+    transform: translateX(-400px) translateY(-400px);
+    width:20px;
+    height:20px;
+}
+/*Planet container*/
+#mercury-container {
+    width:450px;
+    animation: planet-movement 15s infinite;
+}
+#venus-container {
+    width:450px;
+    animation: planet-movement 20s infinite;
+}
+#earth-container {
+    width:450px;
+    animation: planet-movement 25s infinite;
+}
+#mars-container {
+    width:450px;
+    animation: planet-movement 30s infinite;
+}
+#jupiter-container {
+    width:500px;
+    animation: planet-movement 35s infinite;
+}
+#saturn-container {
+    width:500px;
+    animation: planet-movement 40s infinite;
+}
+#uranus-container {
+    width:500px;
+    animation: planet-movement 50s infinite;
+}
+#neptune-container {
+    width:500px;
+    animation: planet-movement 60s infinite;
+}
+#pluto-container {
+    width:700px;
+    animation: planet-movement 65s infinite;
+}
+/*Planet information*/
+#planets-information div {
+    color:black;
+}
+.info {
+    display:none;
+    background-color:#8A8B91;
+    margin-bottom: 0.5em;
+    border-radius: 5%;
+    padding: 1em;
+}
+#venus-info {
+    background-color:#a57c1b;
+}
+#earth-info {
+    background-color:lightblue;
+}
+#mars-info {
+    background-color:#c1440e;
+}
+#jupiter-info {
+    background-color:#c99039;
+}
+#saturn-info {
+    background-color:darkkhaki;
+}
+#uranus-info {
+    background-color:skyblue;
+}
+#neptune-info {
+    background-color:royalblue;
+}
+#pluto-info {
+    background-color:#fff1d5;
+}
+#sun-info {
+    background-color:#E36700;
+}
+/*The race to space*/
+/*Space craft*/
+#spacecraft {
+    /*background-color:cadetblue;
+    /*background-color: #5c7496;*/
+    background:url("image/milky-way-low-opac.jpg");
+}
+.space-probe img {
+    width: 15%;
+    height: auto;
+}
+#parker-probe img {
+    animation: parker-movement 2s infinite;
+}
+#juno img {
+    animation: juno-movement 6s infinite;
+}
+#galileo img {
+    animation: juno-movement 8s infinite;
+}
+#cassini img {
+    width: 20%;
+    height: auto;
+    animation: cassini-movement 15s infinite;
+}
+#new-horizons img {
+    width: 10%;
+    height: auto;
+    margin-top: 5em;
+    animation: new-horizons-movement 25s infinite;
+}
+#voyager img {
+    width: 25%;
+    height: auto;
+    margin: 3em 0 4em;
+    animation: voyager-movement 25s infinite;
+}
+#apollo img {    
+    animation: apollo-movement 10s infinite;
+    margin-top: 2em;
+}
+#space-craft-list {
+    flex: 2 0 0;
+}
+/*Destination*/
+#destination {
+    flex: 1 0 0;
+}
+.spacecraft-destination {
+    border-radius:50%; 
+    text-align: center;
+}
+#sun-destination {
+    border-radius:50%;
+    width:80px;
+    height:80px;
+    background:#E36700;
+    margin-bottom:0.5em;
+    transform: translateX(-420px);
+}
+#jupiter-destination {
+    background-color:#c99039;
+    width:60px;
+    height:60px;
+    margin-bottom:2em;
+    transform: translateX(-320px);
+}
+#saturn-destination {
+    background-color:darkkhaki;
+    width:60px;
+    height:60px;
+    margin-top:5em;
+    transform: translateX(-235px);
+}
+#pluto-destination {
+    background-color:#fff1d5;
+    width:20px;
+    height:20px;
+    margin-top: 7em;
+    transform: translateX(-40px);
+}
+#interstellar {
+    margin:6em 0 1em;
+}
+#interstellar img {
+    width:40%;
+    height:auto;    
+}
+#moon-destination {
+    background-color:darkgrey;
+    width:20px;
+    height:20px;
+    margin-top:5em;
+    transform: translateX(-420px);
+}
+#the-moon {
+  transform: translateX(-430px);  
+}
+
+/*Fact sheet*/
+#spacecraft-fact-sheet div {
+    margin-bottom: 1em;
+    display: none;
+}
+#spacecraft-fact-sheet {
+    flex: 2 0 0;
+    background-color: #505c7e;
+    padding: 1em;
+}
+@keyframes planet-movement {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(250deg);
+        transform-origin: bottom left;
+    }
+}
+@keyframes parker-movement {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(100px);
+    }
+}
+@keyframes juno-movement {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(200px);
+    }    
+}
+@keyframes cassini-movement {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(300px);
+    }    
+}
+@keyframes new-horizons-movement {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(500px);
+    }    
+}
+@keyframes voyager-movement {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(500px);
+    }    
+}
+@keyframes apollo-movement {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(80px);
+    }
+    
+}

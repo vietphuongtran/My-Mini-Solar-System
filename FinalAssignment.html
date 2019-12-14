@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <title>Final Assignment: CSS Animation</title>
+            <link rel="stylesheet" type="text/css" href="animationstyle.css">
+            <script src="animationscript.js"></script>
+        </head>
+        <body>
+            <header id="header">
+            <div class="content-flexbox">                					
+                    <!-- logo and slogan -->
+                <div id="logo">
+                    <h1 class="hidden">The Universe in a Nutshell</h1>	
+                    <a href ="#"><img src="image/site-logo.png" alt="The universe in an egg shaped inside a nutshell"></a>
+                </div>
+                <div id="main-menu">
+                        <nav id="main-navigation">
+                            <h2 class="hidden">Main navigation</h2>
+                            <ul class="menu" id="top-nav">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>				
+                            </ul>
+                        </nav>
+                    </div>			
+                </div>
+            </header>
+            <div class="content-flexbox">
+                <div id="universe">
+                    <div><h2>Solar system's secrets</h2></div>
+                    <div id="sun"></div>
+                    <div id="mercury-container" class="container"> 
+                        <div id="mercury" class="planet"></div>
+                    </div>
+                    <div id="venus-container" class="container"> 
+                        <div id="venus" class="planet"></div>
+                    </div>
+                    <div id="earth-container" class="container"> 
+                        <div id="earth" class="planet"></div>
+                    </div> 
+                    <div id="mars-container" class="container"> 
+                        <div id="mars" class="planet"></div>
+                    </div>
+                    <div id="jupiter-container" class="container"> 
+                        <div id="jupiter" class="planet"></div>
+                    </div>
+                    <div id="saturn-container" class="container"> 
+                        <div id="saturn" class="planet"></div>
+                    </div>
+                    <div id="uranus-container" class="container"> 
+                        <div id="uranus" class="planet"></div>
+                    </div>
+                    <div id="neptune-container" class="container"> 
+                        <div id="neptune" class="planet"></div>
+                    </div>
+                    <div id="pluto-container" class="container"> 
+                        <div id="pluto" class="planet"></div>
+                    </div>
+                    <!--<div id="comet-container" class="container">
+                        <div id="comet"></div>
+                    </div>-->
+                </div>
+                <div id="planets-information">                    
+                    <div id="sun-info" class="info">Sun: the center of the solar system. The sun is by far the most important source of energy for life on Earth. Its diameter is 109 times that of Earth, and its mass is about 330,000 times that of Earth. It accounts for about 99.86% of the total mass of the Solar System</div>
+                    <div id="mercury-info" class="info">Mercury: the closest planet to the sun so it has the shortest day of all planets in the solar system. It was named after the Greek Messenger God because of its speed.</div>
+                    <div id="venus-info" class="info">Venus: not as beauty as the name. The planet is the hottest place in the solar system with  temperature is expected to get as high as 462 °C.</div>
+                    <div id="earth-info" class="info">Earth: our home sweet home. The only place where life is known to exist.</div>
+                    <div id="mars-info" class="info">Mars: our future home. It is believed to have geological activity and even nurture life until 2 million years ago.</div>
+                    <div id="jupiter-info" class="info">Jupiter: the giant. It is 2.5 times the mass of all the other planets put together. Jupiter's strong internal heat creates semi-permanent features in its atmosphere, such as cloud bands and the Great Red Spot.</div>
+                    <div id="saturn-info" class="info">Saturn: the lord of the rings. It has several similarities to Jupiter, such as its atmospheric composition and magnetosphere. Distinguished by the rings, they are made up of small ice and rock particles can be observed through normal telescope.</div>
+                    <div id="uranus-info" class="info">Uranus: the lightest of all. It is the only planet that orbits the Sun on its side; its axial tilt is over ninety degrees to the ecliptic. It has a much colder core than the other giant planets and radiates very little heat into space.</div>
+                    <div id="neptune-info" class="info">Neptune: the ocean world. Neptune has 14 known satellites. The largest, Triton, is geologically active, with geysers of liquid nitrogen. Triton is the only large satellite with a retrograde orbit. Neptune is accompanied in its orbit by several minor planets, termed Neptune trojans, that are in 1:1 resonance with it.</div>
+                    <div id="pluto-info" class="info">Pluto: recently been demoted to drwaf planet. Pluto is located in the Kuiper object and is famous for its heart-shaped terrain.</div>
+                  
+                </div>
+            </div>
+            <div id="spacecraft">
+                <h2>The race to space: Fastest spacecrafts ever made!</h2>
+                <div class="content-flexbox">
+                    <div id="space-craft-list" class="space-craft-pictures"><h3>Space craft list</h3>
+                        <div id="parker-probe" class="space-probe"><img src="image/Parker_Solar_Probe.png" alt="image of the Parker Probe - the solar satelite"/></div>
+                        <div id="juno" class="space-probe"><img src="image/Juno_spacecraft.png" alt="model image of Juno Space craft"/></div>
+                        <div id="galileo" class="space-probe"><img src="image/Galileo_spacecraft.png" alt="Model image of Galileo Spacecraft"/></div>
+                        <div id="cassini" class="space-probe"><img src="image/Cassini-spacecraft.png" alt="Model image of Cassini spacecraft"/></div>
+                        <div id="new-horizons" class="space-probe"><img src="image/new-horizons.png" alt="Model image of Pluto spacecraft"/></div>
+                        <div id="voyager" class="space-probe"><img src="image/voyager.png" alt="Model image of Voyager Space craft"/></div>
+                        <div id="apollo" class="space-probe"><img src="image/apollo10.png" alt="Model image of Apollo Space craft"/></div>
+                        <!-- All pictures are downloaded from NASA and modified by Paul Tran for educational purpose -->
+                    </div>
+                    <div id="destination"><h3>Destination</h3>
+                        <div id="sun-destination" class="spacecraft-destination">Sun</div>                 
+                        <div id="jupiter-destination" class="spacecraft-destination">Jupiter</div>
+                        <div id="jupiter-destination" class="spacecraft-destination">Jupiter</div>
+                        <div id="saturn-destination" class="spacecraft-destination">Saturn</div>
+                        <div id="pluto-destination" class="spacecraft-destination"></div>Pluto
+                        <div id="interstellar"><img src="image/interstellar-01.png" alt="Image of a blackhole"/></div>Interstellar
+                        <div id="moon-destination" class="spacecraft-destination"></div>
+                        <div id="the-moon">The Moon</div>
+                    </div>
+                    <div id="spacecraft-fact-sheet" ><h3>Factsheet</h3>
+                        <div id="parker-probe-info" class="fact-sheet">The Parker Solar probe launched in 2018, with the mission of repeatedly probing and making observations of the outer corona of the Sun. Its average speed is 95.33km/s, the fastest space probe</div>
+                         <div id="juno-info" class="fact-sheet">Juno is the second spacecraft to orbit Jupiter, after the nuclear powered Galileo orbiter, which orbited from 1995 to 2003.Unlike all earlier spacecraft sent to the outer planets,Juno is powered by solar arrays, commonly used by satellites orbiting Earth and working in the inner Solar System. Its speed during orbit insertion was 58km/s.
+                        </div>
+                        <div id="galileo-info" class="fact-sheet"> Named after the Italian astronomer Galileo Galilei, Galileo was the first American uncrewed spacecraft  to orbit. It primary mission is to study the planet Jupiter and its moons, as well as several other Solar System bodies. Despite suffering major antenna problems, Galileo discovered the first asteroid moon, Dactyl. In 1994, Galileo observed Comet Shoemaker–Levy 9's collision with Jupiter. Its speed during the Jupiter entry was 48km/s.</div>
+                        <div id="cassini-info" class="fact-sheet">
+                        The Cassini–Huygens space-research mission, commonly called Cassini, involved a collaboration between NASA, the European Space Agency (ESA), and the Italian Space Agency (ASI) to send a probe to study the planet Saturn and its system, including its rings and natural satellites. The Flagship-class robotic spacecraft comprised both NASA's Cassini probe and ESA's Huygens lander, which landed on Saturn's largest moon, Titan. Cassini was the fourth space probe to visit Saturn and the first to enter its orbit. The two craft took their names from the astronomers Giovanni Cassini and Christiaan Huygens. Its average speed in space is 34km/s.
+                        </div>
+                        
+                        <div id="new-horizons-info" class="fact-sheet">New Horizons is an interplanetary space probe that was launched in 2006 with the primary mission to observe the Pluto system and study one or more other Kuiper belt objects (KBOs). It is the fifth spacecrafts to leave the solar system. Its speed at launch was 16.26km/s</div>
+                         <div id="voyager-info" class="fact-sheet">
+                        Voyager 1 is a space probe launched by NASA on September 5, 1977. Part of the Voyager program to study the outer Solar System, Voyager 1 was launched 16 days after its twin, Voyager 2. Having operated for 42 years, the spacecraft still communicates with the Deep Space Network to receive routine commands and to transmit data to Earth. At a distance of 147.380 AU (22.0 billion km; 13.7 billion mi) from Earth as of November 4, 2019, it is the most distant man-made object from Earth. Its interstellar space is 16km/h.
+                        </div>
+                        <div id="apollo-info" class="fact-sheet">Apollo 10 was a May 1969 human spaceflight, the fourth crewed mission in the United States Apollo program, and the second (after Apollo 8) to orbit the Moon. After orbiting the Moon 31 times, Apollo 10 returned safely to Earth. Apollo 10 set the record for the highest speed attained by a crewed vehicle: 11.08 km/s on May 26, 1969, during the return from the Moon.</div>
+                    </div>
+                </div>
+                
+            
+            </div>
+              <!--All information was adopted and modified from Wikipedia by Paul Tran for educational purposes-->
+            <footer id="footer">
+                This website was developed by Paul Tran for educational purpose
+            </footer>
+        </body>
+</html>
